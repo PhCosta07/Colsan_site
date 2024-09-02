@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="Style cadastro.css">
+    <script src="https://kit.fontawesome.com/cf3f0d8b33.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="form">
+        <!-- Changed form action to point to register.php -->
+        <form action="register.php" method="POST">
+            <h2 class="title">Cadastrar</h2>
+
+            <label for="Nome">Nome completo</label>
+            <div class="input">
+                <i class="fa-regular fa-user"></i>
+                <input id="nome" name="Nome" placeholder="Nome" type="text" required>
+            </div>
+
+            <label for="Data">Data Nascimento</label>
+            <div class="input">
+                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                <input id="data" name="data" placeholder="data" type="date" required>
+            </div>
+
+            <label for="CPF">CPF</label>
+            <div class="input">
+                <i class="fa-regular fa-id-card"></i>
+                <input id="CPF" name="CPF" placeholder="CPF" type="text" required>
+            </div>
+
+            <label for="sexo">Sexo</label>
+            <div class="input">
+                <div class="radio-btn">
+                    <input type="radio" class="form_new_input" id="masculino" name="sexo" value="Masculino" required="required">
+                    <label for="masculino" class="radio_label form_label"> <span class="radio_new_btn"></span> Masculino</label>
+                    <hr class="featurette-divider">
+                    <input type="radio" class="form_new_input" id="feminino" name="sexo" value="Feminino" required="required">
+                    <label for="feminino" class="radio_label form_label"> <span class="radio_new_btn"></span> Feminino</label>
+                </div>
+            </div>
+
+            <label for="nacionalidade">Nacionalidade</label>
+            <div class="input">
+                <i class="fa-solid fa-location-dot"></i>
+                <input id="nacionalidade" name="nacionalidade" placeholder="nacionalidade" type="text" required>
+            </div>
+
+            <label for="endereco">Endereço</label>
+            <div class="input">
+                <i class="fa-solid fa-location-dot"></i>
+                <input id="endereco" name="endereco" placeholder="endereço" type="text" required>
+            </div>
+
+            <label for="cep">CEP</label>
+            <div class="input">
+                <i class="fa-solid fa-location-dot"></i>
+                <input id="cep" name="cep" placeholder="cep" type="text" required>
+            </div>
+
+            <label for="cidade">Cidade</label>
+            <div class="input">
+                <i class="fa-solid fa-location-dot"></i>
+                <input id="cidade" name="cidade" placeholder="cidade" type="text" required>
+            </div>
+
+            <label for="estado">Estado</label>
+            <div class="input">
+                <i class="fa-solid fa-location-dot"></i>
+                <input id="estado" name="estado" placeholder="estado" type="text" required>
+            </div>
+
+            <label for="telefone">Telefone</label>
+            <div class="input">
+                <i class="fa-solid fa-phone"></i>
+                <input id="telefone" name="telefone" placeholder="telefone" type="text" required>
+            </div>
+
+            <label for="Profissao">Profissão</label>
+            <div class="input">
+                <i class="fa-solid fa-briefcase"></i> 
+                <input id="Profissao" name="Profissao" placeholder="Profissão" type="text" required>
+            </div>
+
+            <label for="Email">Email</label>
+            <div class="input">
+                <i class="fa-regular fa-envelope"></i>   
+                <input id="email" name="Email" placeholder="Email" type="email" required>
+            </div>
+
+            <label for="Senha">Senha</label>
+            <div class="input">
+                <i class="fa-solid fa-lock"></i>
+                <input id="senha" name="Senha" placeholder="Senha" type="password" required>
+            </div>
+
+            <div id="btn">
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
